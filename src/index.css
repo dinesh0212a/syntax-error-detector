@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;1,9..144,300&display=swap');
+
+:root {
+  --bg: #ffffff;
+  --bg-panel: #f8f7f5;
+  --bg-card: #ffffff;
+  --bg-hover: #f2f0ed;
+  --border: #e2ddd8;
+  --border-strong: #c8c0b8;
+
+  --text: #1a1714;
+  --text-2: #5a534d;
+  --text-3: #9e948c;
+
+  --shift: #1a56db;
+  --shift-bg: #eff6ff;
+  --reduce: #7e3af2;
+  --reduce-bg: #f5f3ff;
+  --accept: #0e9f6e;
+  --accept-bg: #f0fdf4;
+  --error: #e02424;
+  --error-bg: #fef2f2;
+  --init: #d97706;
+  --init-bg: #fffbeb;
+
+  --warn-bg: #fffbeb;
+  --warn-border: #f59e0b;
+  --warn-text: #92400e;
+  --info-bg: #eff6ff;
+  --info-border: #3b82f6;
+
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-mono: 'DM Mono', 'Courier New', monospace;
+
+  --radius: 6px;
+  --shadow: 0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.05);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body { height: 100%; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-mono);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-in {
+  animation: slideIn 0.3s ease-out;
+}
